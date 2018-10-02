@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="actionBarSize">64dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_20">10dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_56">56dp</dimen>
+
+    <dimen name="input_text_corner">28dp</dimen>
+    <dimen name="button_corner">40dp</dimen>
+</resources>
