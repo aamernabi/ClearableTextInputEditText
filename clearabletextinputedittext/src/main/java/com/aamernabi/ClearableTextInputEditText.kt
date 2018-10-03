@@ -40,13 +40,12 @@ class ClearableTextInputEditText : TextInputEditText {
                 mClearButton?.let {
                     it.callback = this
                 }
+            } else {
+                mClearButton = ResourcesCompat.getDrawable(resources, defaultDrawable, null)
             }
         }
         typedArray.recycle()
 
-        attrs?.let {
-            mClearButton = ResourcesCompat.getDrawable(resources, defaultDrawable, null)
-        }
         setOnTouchListener(OnTouchListener { _, event ->
             if (compoundDrawablesRelative[2] != null) {
                 var clearButtonStart: Float // Used for LTR languages
@@ -67,11 +66,9 @@ class ClearableTextInputEditText : TextInputEditText {
 
                     if (isClearButtonClicked) {
                         if (event.action == MotionEvent.ACTION_DOWN) {
-                            mClearButton = ResourcesCompat.getDrawable(resources, R.drawable.ic_clear_black, null)
                             showClearButton()
                         }
                         if (event.action == MotionEvent.ACTION_UP) {
-                            mClearButton = ResourcesCompat.getDrawable(resources, R.drawable.ic_clear_grey, null)
                             text?.clear()
                             hideClearButton()
                             return@OnTouchListener true

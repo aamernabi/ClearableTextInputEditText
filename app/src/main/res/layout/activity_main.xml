@@ -29,7 +29,8 @@
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username"/>
+            android:hint="@string/username"
+            app:clearDrawable="@drawable/ic_cancel"/>
 
     </android.support.design.widget.TextInputLayout>
 
